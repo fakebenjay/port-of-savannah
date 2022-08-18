@@ -52,7 +52,17 @@ map.on('load', () => {
       'line-cap': 'round'
     },
     'paint': {
-      'line-color': '#faa916',
+      'line-color': {
+        property: 'FULLNAME',
+        type: 'categorical',
+        stops: [
+          ['I-95', '#faa916'],
+          ['I-16', '#faa916'],
+          ['I-516', '#faa916'],
+          ['Jimmy DeLoach Pkwy/GA-17', '#faa916'],
+          ['Jimmy DeLoach Pkwy/GA-17 Extension', 'violet']
+        ]
+      },
       'line-width': 1
     }
   }, 'road-label');
