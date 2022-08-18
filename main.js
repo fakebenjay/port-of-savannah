@@ -3,11 +3,18 @@
 mapboxgl.accessToken =
   "pk.eyJ1IjoiYmVuLWpheSIsImEiOiJjbDZ6YzkzanQwMjhsM25yeGxwc290MTgwIn0.a6Yr-ZENFv914e7ImIrVIQ";
 
+
+var zoomScale = d3.scaleLinear()
+  .domain([200, 640])
+  .range([8.4, 10.1])
+  .clamp(true)
+var zoomIndex = window.innerWidth < 640 ? 9.5 : 10.1
+
 const map = new mapboxgl.Map({
   container: "savannah-map",
   style: "mapbox://styles/mapbox/light-v10", // <- more at https://docs.mapbox.com/api/maps/styles/
-  center: [-81.2737187, 32.0947185], // <- [longitude, latitude]
-  zoom: 10.1, // <- bigger is closer
+  center: [-81.2837187, 32.0947185], // <- [longitude, latitude]
+  zoom: zoomScale(window.innerWidth)
 });
 
 // Navigation buttons //
