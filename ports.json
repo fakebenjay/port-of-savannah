@@ -3,7 +3,9 @@
   "features": [{
       "type": "Feature",
       "properties": {
-        "name": "Garden City Terminal"
+        "name": "Garden City Terminal",
+        "subtitle": "Port of Savannah",
+        "offset": [2, -2]
       },
       "geometry": {
         "type": "Polygon",
@@ -124,7 +126,9 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Ocean Terminal"
+        "name": "Ocean Terminal",
+        "subtitle": "Port of Savannah",
+        "offset": [0.5, -1.7]
       },
       "geometry": {
         "type": "Polygon",
@@ -265,7 +269,9 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Bryan County Megasite"
+        "name": "Bryan County Megasite",
+        "subtitle": "Future Hyundai EV plant",
+        "offset": [6, -2]
       },
       "geometry": {
         "type": "Polygon",

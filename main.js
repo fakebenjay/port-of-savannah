@@ -6,14 +6,13 @@ mapboxgl.accessToken =
 
 var zoomScale = d3.scaleLinear()
   .domain([200, 640])
-  .range([8.4, 10.1])
+  .range([8.4, 10])
   .clamp(true)
-var zoomIndex = window.innerWidth < 640 ? 9.5 : 10.1
 
 const map = new mapboxgl.Map({
   container: "savannah-map",
   style: "mapbox://styles/ben-jay/cl6zv01xx000o15p9j3izdcj5", // <- more at https://docs.mapbox.com/api/maps/styles/
-  center: [-81.2837187, 32.0947185], // <- [longitude, latitude]
+  center: [-81.25700, 32.0947185], // <- [longitude, latitude]
   zoom: zoomScale(window.innerWidth),
   projection: 'mercator',
   maxBounds: [
@@ -29,6 +28,29 @@ const nav = new mapboxgl.NavigationControl({
 map.addControl(nav, "top-right");
 
 map.on('load', () => {
+  map.addSource("cities", {
+    type: "geojson",
+    data: 'cities.json',
+  });
+
+  map.addLayer({
+    id: "cities",
+    type: "fill",
+    source: "cities",
+    paint: {
+      'fill-color': {
+        property: 'NAME',
+        type: 'categorical',
+        stops: [
+          ['Savannah', '#6ba292'],
+          ['Pooler', '#654f6f'],
+          ['Bloomingdale', '#ed6a5a']
+        ]
+      },
+      'fill-opacity': .2
+    },
+  }, 'road-label');
+
   map.addSource('roads', {
     'type': 'geojson',
     'data': 'roads.json'
@@ -54,7 +76,18 @@ map.on('load', () => {
           ['Jimmy DeLoach Pkwy/GA-17 Extension', 'black']
         ]
       },
-      'line-width': 6
+      'line-width': 8,
+      // 'line-dasharray': {
+      //   property: 'FULLNAME',
+      //   type: 'categorical',
+      //   stops: [
+      //     ['I-95', [1, 0]],
+      //     ['I-16', [1, 0]],
+      //     ['I-516', [1, 0]],
+      //     ['Jimmy DeLoach Pkwy/GA-17', [1, 0]],
+      //     ['Jimmy DeLoach Pkwy/GA-17 Extension', [1, 1]]
+      //   ]
+      // }
     }
   }, 'road-label');
 
@@ -78,13 +111,51 @@ map.on('load', () => {
           ['Jimmy DeLoach Pkwy/GA-17 Extension', 'white']
         ]
       },
-      'line-width': 1
+      'line-width': 1.5,
+      'line-opacity': 1,
+      'line-dasharray': {
+        property: 'FULLNAME',
+        type: 'categorical',
+        stops: [
+          ['I-95', [1, 0]],
+          ['I-16', [1, 0]],
+          ['I-516', [1, 0]],
+          ['Jimmy DeLoach Pkwy/GA-17', [1, 0]],
+          ['Jimmy DeLoach Pkwy/GA-17 Extension', [6, 6]]
+        ]
+      }
     }
   }, 'road-label');
 
   map.addSource("ports", {
     type: "geojson",
     data: 'ports.json',
+  });
+
+  map.addLayer({
+    'id': 'ports-text',
+    'type': 'symbol',
+    'source': 'ports',
+    'minzoom': 8.4,
+    'layout': {
+      'text-field': [
+        'format',
+        ['upcase', ['get', 'name']],
+        {
+          'font-scale': 0.7
+        },
+        '\n',
+        {},
+        ['get', 'subtitle'],
+        {
+          'font-scale': 0.7
+        }
+      ],
+      // "text-offset": ['get', 'offset'],
+      'text-anchor': 'top-left',
+
+      'text-font': ['Open Sans Semibold', 'Arial Unicode MS Bold']
+    }
   });
 
   map.addLayer({
@@ -123,29 +194,6 @@ map.on('load', () => {
     },
   }, 'road-label');
 
-  map.addSource("cities", {
-    type: "geojson",
-    data: 'cities.json',
-  });
-
-  map.addLayer({
-    id: "cities",
-    type: "fill",
-    source: "cities",
-    paint: {
-      'fill-color': {
-        property: 'NAME',
-        type: 'categorical',
-        stops: [
-          ['Savannah', '#6ba292'],
-          ['Pooler', '#654f6f'],
-          ['Bloomingdale', '#ed6a5a']
-        ]
-      },
-      'fill-opacity': .2
-    },
-  }, 'road-label');
-
   map.addSource('counties', {
     'type': 'geojson',
     'data': 'counties.json'
@@ -160,7 +208,7 @@ map.on('load', () => {
       'line-cap': 'round'
     },
     'paint': {
-      'line-color': 'black',
+      'line-color': '#36454F',
       'line-width': 1
     }
   }, 'road-label');
@@ -225,7 +273,7 @@ map.on("mousemove", "counties-fill", (e) => {
   const county = e.features[0].properties.NAME;
 
   // Make the popup text
-  const description = `<strong>${county} County</strong>`
+  const description = `<strong style="text-align:center;display:inline-block;">${county} County</strong>`
 
   // Populate the popup and set its coordinates
   // based on the feature found.
@@ -249,7 +297,7 @@ map.on("mousemove", "cities", (e) => {
   const city = e.features[0].properties.NAME;
 
   // Make the popup text
-  const description = `<strong>${city}, Ga.</strong>`
+  const description = `<strong style="text-align:center;display:inline-block;">${city}, Ga.</strong>`
 
   // Populate the popup and set its coordinates
   // based on the feature found.
@@ -273,7 +321,7 @@ map.on("mousemove", "roads", (e) => {
   const road = e.features[0].properties.FULLNAME;
 
   // Make the popup text
-  const description = `<strong>${road}</strong>`
+  const description = `<strong style="text-align:center;display:inline-block;">${road}</strong>`
 
   // Populate the popup and set its coordinates
   // based on the feature found.
@@ -297,7 +345,7 @@ map.on("mousemove", "roads-inner", (e) => {
   const road = e.features[0].properties.FULLNAME;
 
   // Make the popup text
-  const description = `<strong>${road}</strong>`
+  const description = `<strong style="text-align:center;display:inline-block;">${road}</strong>`
 
   // Populate the popup and set its coordinates
   // based on the feature found.
@@ -319,9 +367,10 @@ map.on("mousemove", "ports-fill", (e) => {
 
   // get the information from the zone we're over
   const port = e.features[0].properties.name;
+  const subtitle = e.features[0].properties.subtitle;
 
   // Make the popup text
-  const description = `<strong>${port}</strong>`
+  const description = `<strong style="text-align:center;display:inline-block;">${port}<br/>${subtitle}</strong>`
 
   // Populate the popup and set its coordinates
   // based on the feature found.
@@ -334,6 +383,7 @@ map.on("mouseleave", "ports-fill", () => {
   popup.remove();
 });
 
-map.moveLayer('cities', 'counties-fill', 'counties-line')
+map.moveLayer('counties-fill', 'counties-line')
 map.moveLayer('roads', 'roads-inner')
+map.moveLayer('roads', 'roads')
 map.moveLayer('ports-fill')
