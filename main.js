@@ -153,7 +153,7 @@ map.on('load', () => {
       ],
       // "text-offset": ['get', 'offset'],
       'text-anchor': 'top-left',
-
+      'text-justify': 'right',
       'text-font': ['Open Sans Semibold', 'Arial Unicode MS Bold']
     }
   });

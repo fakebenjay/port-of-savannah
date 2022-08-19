@@ -56,16 +56,19 @@ svg {
 
 .dek {
   margin-top: 0px;
-  margin-left: 10px;
-  margin-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
   font-size: 11pt;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 .hed {
+  border-top: 6px solid #654f6f;
   display: block;
   padding-top: 10px;
-  margin-left: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
   font-size: 16pt;
   font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
@@ -136,16 +139,16 @@ svg {
 
 .source {
   display: inline-block;
-  width: 75%;
+  width: 73%;
   padding: 10px;
   font-size: 10pt;
 }
 
 .gfx-logo {
   display: inline-block;
-  width: 25%;
+  width: 27%;
   text-align: right;
-  padding: 10px 20px;
+  padding: 10px 5px;
   position: absolute;
   bottom: 0;
   float: left;
@@ -252,7 +255,12 @@ strong.trial.pending {
   }
 
   .gfx-logo {
+    width: 45%;
     padding: 0 5px !important;
+  }
+
+  .source {
+    width: 55%;
   }
 
   .label {
