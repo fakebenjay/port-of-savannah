@@ -29,6 +29,9 @@
         "properties": {
           "PROJECT_ID": "522790-",
           "FULLNAME": "Jimmy DeLoach Pkwy/GA-17 Extension",
+          "NUMBER": "17",
+          "WIDTH": "1",
+          "JURISDICTION": "georgia-state",
           "OBJECTID": 62648,
           "SORT_ORDER": 1
         }
@@ -114,6 +117,9 @@
         "properties": {
           "LINEARID": "1106081368788",
           "FULLNAME": "Jimmy DeLoach Pkwy/GA-17",
+          "NUMBER": "17",
+          "WIDTH": "1",
+          "JURISDICTION": "georgia-state",
           "RTTYP": "M",
           "MTFCC": "S1200"
         }
@@ -202,6 +208,9 @@
         "properties": {
           "LINEARID": "1105320639707",
           "FULLNAME": "Jimmy DeLoach Pkwy/GA-17",
+          "NUMBER": "17",
+          "WIDTH": "1",
+          "JURISDICTION": "georgia-state",
           "RTTYP": "M",
           "MTFCC": "S1400"
         }
@@ -254,6 +263,9 @@
         "properties": {
           "LINEARID": "1105320606093",
           "FULLNAME": "Jimmy DeLoach Pkwy/GA-17",
+          "NUMBER": "17",
+          "WIDTH": "1",
+          "JURISDICTION": "georgia-state",
           "RTTYP": "M",
           "MTFCC": "S1200"
         }
@@ -357,6 +369,9 @@
         "properties": {
           "LINEARID": "1106081368787",
           "FULLNAME": "Jimmy DeLoach Pkwy/GA-17",
+          "NUMBER": "17",
+          "WIDTH": "1",
+          "JURISDICTION": "georgia-state",
           "RTTYP": "M",
           "MTFCC": "S1200"
         }
@@ -383,6 +398,9 @@
         "properties": {
           "LINEARID": "1106081368789",
           "FULLNAME": "Jimmy DeLoach Pkwy/GA-17",
+          "NUMBER": "17",
+          "WIDTH": "1",
+          "JURISDICTION": "georgia-state",
           "RTTYP": "M",
           "MTFCC": "S1200"
         }
@@ -435,6 +453,9 @@
         "properties": {
           "LINEARID": "1105320612203",
           "FULLNAME": "Jimmy DeLoach Pkwy/GA-17",
+          "NUMBER": "17",
+          "WIDTH": "1",
+          "JURISDICTION": "georgia-state",
           "RTTYP": "M",
           "MTFCC": "S1200"
         }
@@ -464,6 +485,9 @@
         "properties": {
           "LINEARID": "1105320639708",
           "FULLNAME": "Jimmy DeLoach Pkwy/GA-17",
+          "NUMBER": "17",
+          "WIDTH": "1",
+          "JURISDICTION": "georgia-state",
           "RTTYP": "M",
           "MTFCC": "S1400"
         }
@@ -583,6 +607,9 @@
         "properties": {
           "LINEARID": "1105320594385",
           "FULLNAME": "Jimmy DeLoach Pkwy/GA-17",
+          "NUMBER": "17",
+          "WIDTH": "1",
+          "JURISDICTION": "georgia-state",
           "RTTYP": "M",
           "MTFCC": "S1400"
         }
@@ -760,6 +787,9 @@
         "properties": {
           "LINEARID": "11013782167815",
           "FULLNAME": "I-16",
+          "NUMBER": "16",
+          "WIDTH": "2",
+          "JURISDICTION": "us-interstate",
           "RTTYP": "I",
           "MTFCC": "S1100"
         }
@@ -850,6 +880,9 @@
         "properties": {
           "LINEARID": "110499858058",
           "FULLNAME": "I-16",
+          "NUMBER": "16",
+          "WIDTH": "2",
+          "JURISDICTION": "us-interstate",
           "RTTYP": "I",
           "MTFCC": "S1100"
         }
@@ -1181,6 +1214,9 @@
         "properties": {
           "LINEARID": "110447643679",
           "FULLNAME": "I-16",
+          "NUMBER": "16",
+          "WIDTH": "2",
+          "JURISDICTION": "us-interstate",
           "RTTYP": "I",
           "MTFCC": "S1100"
         }
@@ -1272,6 +1308,9 @@
         "properties": {
           "LINEARID": "110436278005",
           "FULLNAME": "I-16",
+          "NUMBER": "16",
+          "WIDTH": "2",
+          "JURISDICTION": "us-interstate",
           "RTTYP": "I",
           "MTFCC": "S1100"
         }
@@ -1465,6 +1504,9 @@
         "properties": {
           "LINEARID": "1105083215366",
           "FULLNAME": "I-16",
+          "NUMBER": "16",
+          "WIDTH": "2",
+          "JURISDICTION": "us-interstate",
           "RTTYP": "I",
           "MTFCC": "S1100"
         }
@@ -1729,6 +1771,9 @@
         "properties": {
           "LINEARID": "110459013721",
           "FULLNAME": "I-16",
+          "NUMBER": "16",
+          "WIDTH": "2",
+          "JURISDICTION": "us-interstate",
           "RTTYP": "I",
           "MTFCC": "S1100"
         }
@@ -1754,6 +1799,9 @@
         "properties": {
           "LINEARID": "110435358061",
           "FULLNAME": "I-16",
+          "NUMBER": "16",
+          "WIDTH": "2",
+          "JURISDICTION": "us-interstate",
           "RTTYP": "I",
           "MTFCC": "S1100"
         }
@@ -1962,6 +2010,9 @@
         "properties": {
           "LINEARID": "110453739786",
           "FULLNAME": "I-16",
+          "NUMBER": "16",
+          "WIDTH": "2",
+          "JURISDICTION": "us-interstate",
           "RTTYP": "I",
           "MTFCC": "S1100"
         }
@@ -1999,6 +2050,9 @@
         "properties": {
           "LINEARID": "110454861853",
           "FULLNAME": "I-16",
+          "NUMBER": "16",
+          "WIDTH": "2",
+          "JURISDICTION": "us-interstate",
           "RTTYP": "I",
           "MTFCC": "S1100"
         }
@@ -2109,6 +2163,9 @@
         "properties": {
           "LINEARID": "110499858059",
           "FULLNAME": "I-16",
+          "NUMBER": "16",
+          "WIDTH": "2",
+          "JURISDICTION": "us-interstate",
           "RTTYP": "I",
           "MTFCC": "S1100"
         }
@@ -2442,6 +2499,9 @@
         "properties": {
           "LINEARID": "110447643678",
           "FULLNAME": "I-16",
+          "NUMBER": "16",
+          "WIDTH": "2",
+          "JURISDICTION": "us-interstate",
           "RTTYP": "I",
           "MTFCC": "S1100"
         }
@@ -2471,6 +2531,9 @@
         "properties": {
           "LINEARID": "110435358060",
           "FULLNAME": "I-16",
+          "NUMBER": "16",
+          "WIDTH": "2",
+          "JURISDICTION": "us-interstate",
           "RTTYP": "I",
           "MTFCC": "S1100"
         }
@@ -2635,6 +2698,9 @@
         "properties": {
           "LINEARID": "110687946196",
           "FULLNAME": "I-16",
+          "NUMBER": "16",
+          "WIDTH": "2",
+          "JURISDICTION": "us-interstate",
           "RTTYP": "I",
           "MTFCC": "S1100"
         }
@@ -2754,6 +2820,9 @@
         "properties": {
           "LINEARID": "110454039461",
           "FULLNAME": "I-16",
+          "NUMBER": "16",
+          "WIDTH": "2",
+          "JURISDICTION": "us-interstate",
           "RTTYP": "I",
           "MTFCC": "S1100"
         }
@@ -2959,6 +3028,9 @@
         "properties": {
           "LINEARID": "110453739787",
           "FULLNAME": "I-16",
+          "NUMBER": "16",
+          "WIDTH": "2",
+          "JURISDICTION": "us-interstate",
           "RTTYP": "I",
           "MTFCC": "S1100"
         }
@@ -2997,6 +3069,9 @@
         "properties": {
           "LINEARID": "110454861855",
           "FULLNAME": "I-16",
+          "NUMBER": "16",
+          "WIDTH": "2",
+          "JURISDICTION": "us-interstate",
           "RTTYP": "I",
           "MTFCC": "S1100"
         }
@@ -3155,6 +3230,9 @@
         "properties": {
           "LINEARID": "110687946197",
           "FULLNAME": "I-16",
+          "NUMBER": "16",
+          "WIDTH": "2",
+          "JURISDICTION": "us-interstate",
           "RTTYP": "I",
           "MTFCC": "S1100"
         }
@@ -3253,6 +3331,9 @@
         "properties": {
           "LINEARID": "110436277787",
           "FULLNAME": "I-16",
+          "NUMBER": "16",
+          "WIDTH": "2",
+          "JURISDICTION": "us-interstate",
           "RTTYP": "I",
           "MTFCC": "S1100"
         }
@@ -3380,6 +3461,9 @@
         "properties": {
           "LINEARID": "110454039462",
           "FULLNAME": "I-16",
+          "NUMBER": "16",
+          "WIDTH": "2",
+          "JURISDICTION": "us-interstate",
           "RTTYP": "I",
           "MTFCC": "S1100"
         }
@@ -3591,6 +3675,9 @@
         "properties": {
           "LINEARID": "110459013720",
           "FULLNAME": "I-16",
+          "NUMBER": "16",
+          "WIDTH": "2",
+          "JURISDICTION": "us-interstate",
           "RTTYP": "I",
           "MTFCC": "S1100"
         }
@@ -3799,6 +3886,9 @@
         "properties": {
           "LINEARID": "110447584348",
           "FULLNAME": "I-16",
+          "NUMBER": "16",
+          "WIDTH": "2",
+          "JURISDICTION": "us-interstate",
           "RTTYP": "I",
           "MTFCC": "S1100"
         }
@@ -4037,6 +4127,9 @@
         "properties": {
           "LINEARID": "110447584349",
           "FULLNAME": "I-16",
+          "NUMBER": "16",
+          "WIDTH": "2",
+          "JURISDICTION": "us-interstate",
           "RTTYP": "I",
           "MTFCC": "S1100"
         }
@@ -4168,6 +4261,9 @@
         "properties": {
           "LINEARID": "1105048349962",
           "FULLNAME": "I-516",
+          "NUMBER": "516",
+          "WIDTH": "3",
+          "JURISDICTION": "us-interstate",
           "RTTYP": "I",
           "MTFCC": "S1100"
         }
@@ -4312,6 +4408,9 @@
         "properties": {
           "LINEARID": "1105048349700",
           "FULLNAME": "I-516",
+          "NUMBER": "516",
+          "WIDTH": "3",
+          "JURISDICTION": "us-interstate",
           "RTTYP": "I",
           "MTFCC": "S1100"
         }
@@ -4334,6 +4433,9 @@
         "properties": {
           "LINEARID": "110454861921",
           "FULLNAME": "I-95",
+          "NUMBER": "95",
+          "WIDTH": "2",
+          "JURISDICTION": "us-interstate",
           "RTTYP": "I",
           "MTFCC": "S1100"
         }
@@ -4503,6 +4605,9 @@
         "properties": {
           "LINEARID": "110441030370",
           "FULLNAME": "I-95",
+          "NUMBER": "95",
+          "WIDTH": "2",
+          "JURISDICTION": "us-interstate",
           "RTTYP": "I",
           "MTFCC": "S1100"
         }
@@ -4830,6 +4935,9 @@
         "properties": {
           "LINEARID": "110448810089",
           "FULLNAME": "I-95",
+          "NUMBER": "95",
+          "WIDTH": "2",
+          "JURISDICTION": "us-interstate",
           "RTTYP": "I",
           "MTFCC": "S1100"
         }
@@ -4932,6 +5040,9 @@
         "properties": {
           "LINEARID": "110455380943",
           "FULLNAME": "I-95",
+          "NUMBER": "95",
+          "WIDTH": "2",
+          "JURISDICTION": "us-interstate",
           "RTTYP": "I",
           "MTFCC": "S1100"
         }
@@ -5117,6 +5228,9 @@
         "properties": {
           "LINEARID": "110441030369",
           "FULLNAME": "I-95",
+          "NUMBER": "95",
+          "WIDTH": "2",
+          "JURISDICTION": "us-interstate",
           "RTTYP": "I",
           "MTFCC": "S1100"
         }
@@ -5345,6 +5459,9 @@
         "properties": {
           "LINEARID": "110416445845",
           "FULLNAME": "I-95",
+          "NUMBER": "95",
+          "WIDTH": "2",
+          "JURISDICTION": "us-interstate",
           "RTTYP": "I",
           "MTFCC": "S1100"
         }
@@ -5541,6 +5658,9 @@
         "properties": {
           "LINEARID": "110455039425",
           "FULLNAME": "I-95",
+          "NUMBER": "95",
+          "WIDTH": "2",
+          "JURISDICTION": "us-interstate",
           "RTTYP": "I",
           "MTFCC": "S1100"
         }
@@ -5712,6 +5832,9 @@
         "properties": {
           "LINEARID": "110436278480",
           "FULLNAME": "I-95",
+          "NUMBER": "95",
+          "WIDTH": "2",
+          "JURISDICTION": "us-interstate",
           "RTTYP": "I",
           "MTFCC": "S1100"
         }
@@ -5977,6 +6100,9 @@
         "properties": {
           "LINEARID": "110448810090",
           "FULLNAME": "I-95",
+          "NUMBER": "95",
+          "WIDTH": "2",
+          "JURISDICTION": "us-interstate",
           "RTTYP": "I",
           "MTFCC": "S1100"
         }
@@ -6238,6 +6364,9 @@
         "properties": {
           "LINEARID": "110416445839",
           "FULLNAME": "I-95",
+          "NUMBER": "95",
+          "WIDTH": "2",
+          "JURISDICTION": "us-interstate",
           "RTTYP": "I",
           "MTFCC": "S1100"
         }
@@ -6380,6 +6509,9 @@
         "properties": {
           "LINEARID": "110436278481",
           "FULLNAME": "I-95",
+          "NUMBER": "95",
+          "WIDTH": "2",
+          "JURISDICTION": "us-interstate",
           "RTTYP": "I",
           "MTFCC": "S1100"
         }
@@ -6399,6 +6531,9 @@
         "properties": {
           "LINEARID": "110454861920",
           "FULLNAME": "I-95",
+          "NUMBER": "95",
+          "WIDTH": "2",
+          "JURISDICTION": "us-interstate",
           "RTTYP": "I",
           "MTFCC": "S1100"
         }
@@ -6567,6 +6702,9 @@
         "properties": {
           "LINEARID": "110455039424",
           "FULLNAME": "I-95",
+          "NUMBER": "95",
+          "WIDTH": "2",
+          "JURISDICTION": "us-interstate",
           "RTTYP": "I",
           "MTFCC": "S1100"
         }
@@ -6670,6 +6808,9 @@
         "properties": {
           "LINEARID": "110455380944",
           "FULLNAME": "I-95",
+          "NUMBER": "95",
+          "WIDTH": "2",
+          "JURISDICTION": "us-interstate",
           "RTTYP": "I",
           "MTFCC": "S1100"
         }

@@ -12,9 +12,14 @@ var zoomIndex = window.innerWidth < 640 ? 9.5 : 10.1
 
 const map = new mapboxgl.Map({
   container: "savannah-map",
-  style: "mapbox://styles/mapbox/light-v10", // <- more at https://docs.mapbox.com/api/maps/styles/
+  style: "mapbox://styles/ben-jay/cl6zv01xx000o15p9j3izdcj5", // <- more at https://docs.mapbox.com/api/maps/styles/
   center: [-81.2837187, 32.0947185], // <- [longitude, latitude]
-  zoom: zoomScale(window.innerWidth)
+  zoom: zoomScale(window.innerWidth),
+  projection: 'mercator',
+  maxBounds: [
+    [-85.605837, 30.350732],
+    [-80.737001, 34.993024]
+  ]
 });
 
 // Navigation buttons //
@@ -38,8 +43,18 @@ map.on('load', () => {
       'line-cap': 'round'
     },
     'paint': {
-      'line-color': '#373739',
-      'line-width': 4
+      'line-color': {
+        property: 'FULLNAME',
+        type: 'categorical',
+        stops: [
+          ['I-95', '#475DCD'],
+          ['I-16', '#475DCD'],
+          ['I-516', '#475DCD'],
+          ['Jimmy DeLoach Pkwy/GA-17', 'black'],
+          ['Jimmy DeLoach Pkwy/GA-17 Extension', 'black']
+        ]
+      },
+      'line-width': 6
     }
   }, 'road-label');
 
@@ -56,11 +71,11 @@ map.on('load', () => {
         property: 'FULLNAME',
         type: 'categorical',
         stops: [
-          ['I-95', '#faa916'],
-          ['I-16', '#faa916'],
-          ['I-516', '#faa916'],
-          ['Jimmy DeLoach Pkwy/GA-17', '#faa916'],
-          ['Jimmy DeLoach Pkwy/GA-17 Extension', 'violet']
+          ['I-95', '#F13B3B'],
+          ['I-16', '#F13B3B'],
+          ['I-516', '#F13B3B'],
+          ['Jimmy DeLoach Pkwy/GA-17', 'white'],
+          ['Jimmy DeLoach Pkwy/GA-17 Extension', 'white']
         ]
       },
       'line-width': 1
@@ -81,9 +96,9 @@ map.on('load', () => {
         property: 'name',
         type: 'categorical',
         stops: [
-          ['Garden City Terminal', '#56a9de'],
-          ['Ocean Terminal', '#56a9de'],
-          ['Bryan County Megasite', '#2d7673']
+          ['Garden City Terminal', '#004a8f'],
+          ['Ocean Terminal', '#004a8f'],
+          ['Bryan County Megasite', '#e8171f']
         ]
       },
       'fill-opacity': .8
@@ -99,9 +114,9 @@ map.on('load', () => {
         property: 'name',
         type: 'categorical',
         stops: [
-          ['Garden City Terminal', '#56a9de'],
-          ['Ocean Terminal', '#56a9de'],
-          ['Bryan County Megasite', '#2d7673']
+          ['Garden City Terminal', '#004a8f'],
+          ['Ocean Terminal', '#004a8f'],
+          ['Bryan County Megasite', '#e8171f']
         ]
       },
       'line-width': 2
