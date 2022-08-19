@@ -28,6 +28,11 @@ const nav = new mapboxgl.NavigationControl({
 map.addControl(nav, "top-right");
 
 map.on('load', () => {
+  // map.setPaintProperty('place-labels', 'fill-color', '#faafee');
+  // map.setPaintProperty('settlement-minor-layer', 'fill-color', '#faafee');
+
+
+
   map.addSource("cities", {
     type: "geojson",
     data: 'cities.json',
@@ -152,9 +157,24 @@ map.on('load', () => {
         }
       ],
       // "text-offset": ['get', 'offset'],
-      'text-anchor': 'top-left',
+      'text-anchor': 'bottom-left',
       'text-justify': 'right',
-      'text-font': ['Open Sans Semibold', 'Arial Unicode MS Bold']
+      'text-font': ['Open Sans Semibold', 'Arial Unicode MS Bold'],
+      // 'text-letter-spacing': .05
+    },
+    'paint': {
+      'text-color': {
+        property: 'name',
+        type: 'categorical',
+        stops: [
+          ['Garden City Terminal', '#004a8f'],
+          ['Ocean Terminal', '#004a8f'],
+          ['Bryan County Megasite', '#e8171f']
+        ]
+      },
+      // 'text-color': 'black',
+      'text-halo-color': '#f1f1f1',
+      "text-halo-width": 1.5
     }
   });
 
