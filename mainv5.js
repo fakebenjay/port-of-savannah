@@ -289,6 +289,7 @@ const popup = new mapboxgl.Popup({
 
 map.on("mousemove", "counties-fill", (e) => {
   // Change the cursor style
+  // debugger
   map.getCanvas().style.cursor = "pointer";
 
   // Get mouse coordinates
@@ -399,7 +400,8 @@ map.on("mousemove", "ports-fill", (e) => {
 
   // Populate the popup and set its coordinates
   // based on the feature found.
-  popup.setLngLat(coordinates).setHTML(description).addTo(map);
+
+  popup.setLngLat(coordinates).setHTML(description).addTo(map)
 });
 
 // remove the popup when we leave all zones
