@@ -1,7 +1,7 @@
 /* global mapboxgl */
 
 mapboxgl.accessToken =
-  "pk.eyJ1IjoiYmVuLWpheSIsImEiOiJjbDZ6YzkzanQwMjhsM25yeGxwc290MTgwIn0.a6Yr-ZENFv914e7ImIrVIQ";
+  "pk.eyJ1IjoiYmVuLWpheSIsImEiOiJjbDZ6ZDVpNDMwMzYyM25tZzZucjdqeXBiIn0.dDzLG05_ut9wMzHXycF71A";
 
 
 var zoomScale = d3.scaleLinear()
@@ -40,7 +40,7 @@ map.on('load', () => {
 
   map.addSource("cities", {
     type: "geojson",
-    data: 'cities.json',
+    data: 'https://assets.law360news.com/1515000/1515386/cities.json',
   });
 
   map.addLayer({
@@ -63,7 +63,7 @@ map.on('load', () => {
 
   map.addSource('roads', {
     'type': 'geojson',
-    'data': 'roads.json'
+    'data': 'https://assets.law360news.com/1515000/1515386/roads.json'
   });
 
   map.addLayer({
@@ -139,7 +139,7 @@ map.on('load', () => {
 
   map.addSource("ports", {
     type: "geojson",
-    data: 'ports.json',
+    data: 'https://assets.law360news.com/1515000/1515386/ports.json',
   });
 
   map.addLayer({
@@ -221,7 +221,7 @@ map.on('load', () => {
 
   map.addSource('counties', {
     'type': 'geojson',
-    'data': 'counties.json'
+    'data': 'https://assets.law360news.com/1515000/1515386/counties.json'
   });
 
   map.addLayer({
