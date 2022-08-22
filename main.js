@@ -5,14 +5,19 @@ mapboxgl.accessToken =
 
 
 var zoomScale = d3.scaleLinear()
-  .domain([200, 640])
-  .range([8.4, 10])
+  .domain([200, 375, 640])
+  .range([8.5, 9.036363636363637, 10])
+  .clamp(true)
+
+var latScale = d3.scaleLinear()
+  .domain([200, 375, 640])
+  .range([-81.2850, -81.22869318181819, -81.25700])
   .clamp(true)
 
 const map = new mapboxgl.Map({
   container: "savannah-map",
   style: "mapbox://styles/ben-jay/cl6zv01xx000o15p9j3izdcj5", // <- more at https://docs.mapbox.com/api/maps/styles/
-  center: [-81.25700, 32.0947185], // <- [longitude, latitude]
+  center: [latScale(window.innerWidth), 32.0947185], // <- [longitude, latitude]
   zoom: zoomScale(window.innerWidth),
   projection: 'mercator',
   maxBounds: [
